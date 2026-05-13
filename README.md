@@ -1,21 +1,37 @@
 # python-weather-app
-My first python project, a weather app.
 
-# 🌤️ Python Weather App
-
-A simple desktop weather application built with Python and Tkinter, using the OpenWeatherMap API to fetch real-time weather data for any city.
-
-> Built following the guide by [BuddyMinds on Medium](https://medium.com/@buddyminds/creating-a-weather-application-in-python-a-step-by-step-guide-b14152cc936a), with additional improvements including environment variable handling and better error management.
+A modern, feature-rich desktop weather application built with Python and Tkinter, using the OpenWeatherMap API to fetch real-time weather data for any city.
 
 ---
 
-## Features
+## 🌤️ Features
 
-- Search weather by city name
-- Displays current temperature in °C
-- Shows weather description (e.g. light rain, clear sky)
-- Friendly error messages for invalid cities or API issues
-- API key stored securely via environment variables
+- **Beautiful Dark-Themed UI** — Modern dark theme with accent colors for a professional look
+- **Search by City** — Enter any city name to get real-time weather data
+- **Comprehensive Weather Info**
+  - Current temperature in °C
+  - Weather description with emoji icons
+  - "Feels like" temperature
+  - Humidity percentage
+  - Wind speed in km/h
+  - Location with country code
+- **Weather Emoji Icons** — Visual indicators for conditions (clear, cloudy, rainy, snowy, etc.)
+- **Responsive Error Handling** — User-friendly error messages for invalid cities, network issues, and API errors
+- **Focus-aware Input Field** — Smart placeholder text that clears on focus
+
+---
+
+## 🔄 Recent Changes
+
+The app has been completely redesigned with significant UI/UX improvements over the original version:
+
+- **Enhanced UI**: Custom color palette with modern dark theme instead of default Tkinter styling
+- **Better Typography**: Multiple font styles for hierarchy (titles, labels, descriptions)
+- **Rich Weather Display**: Shows temperature, feels-like temp, humidity, and wind speed in an organized card layout
+- **Visual Feedback**: Weather-specific emoji icons and professional status indicators
+- **Improved Error Handling**: Status bar with clear error messages instead of popup dialogs
+- **Better Layout**: Organized sections (header, search bar, weather card, status)
+- **Smoother UX**: Focus-aware entry field with placeholder text, keyboard support (Enter to search)
 
 ---
 
@@ -36,29 +52,21 @@ A simple desktop weather application built with Python and Tkinter, using the Op
 
 2. **Install dependencies**
    ```bash
-   pip install requests python-dotenv
+   pip install requests
    ```
 
-3. **Set up your API key**
-
-   Create a `.env` file in the project root:
-   ```
-   OPENWEATHER_API_KEY=your_api_key_here
-   ```
-   You can use `.env.example` as a template.
-
-4. **Run the app**
+3. **Run the app**
    ```bash
-   python main.py
+   python test.py
    ```
 
 ---
 
 ## Usage
 
-1. Enter a city name in the input field
-2. Click **Get Weather**
-3. View the current temperature and conditions
+1. Enter a city name in the input field (e.g., "London", "Tokyo", "New York")
+2. Click **GET WEATHER** or press Enter
+3. View the current temperature, conditions, humidity, wind speed, and more
 
 ---
 
@@ -66,11 +74,9 @@ A simple desktop weather application built with Python and Tkinter, using the Op
 
 ```
 python-weather-app/
-├── main.py          # Main application
-├── .env             # Your API key (not committed)
-├── .env.example     # Template for API key setup
-├── .gitignore       # Ensures .env is never pushed
-└── README.md
+├── test.py          # Main application (redesigned version)
+├── README.md        # Project documentation
+└── .gitignore       # Git ignore rules
 ```
 
 ---
@@ -84,6 +90,6 @@ python-weather-app/
 
 ---
 
-## Acknowledgements
+## License
 
-- Tutorial by [BuddyMinds on Medium](https://medium.com/@buddyminds/creating-a-weather-application-in-python-a-step-by-step-guide-b14152cc936a)
+This project is open source and available under the MIT License.
